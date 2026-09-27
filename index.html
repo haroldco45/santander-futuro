@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Santander, nuestro futuro · Vibras Positivas HM</title>
+<meta name="description" content="Todo sobre Santander (Cantabria, España): lugares, barrios, costos, cómo emigrar desde Colombia y plan paso a paso.">
+<meta name="theme-color" content="#EB0A1E">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Santander">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://haroldco45.github.io/santander-futuro/">
+<meta property="og:title" content="Santander, nuestro futuro">
+<meta property="og:description" content="Lugares, barrios, costos y cómo emigrar desde Colombia. Plan paso a paso para la familia.">
+<meta property="og:image" content="https://haroldco45.github.io/santander-futuro/og-image.png?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Santander, nuestro futuro">
+<meta name="twitter:description" content="Lugares, barrios, costos y cómo emigrar desde Colombia.">
+<meta name="twitter:image" content="https://haroldco45.github.io/santander-futuro/og-image.png?v=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --ink:#000000; --soft:#58595B; --line:#E4E4E4; --card:#F5F5F5;
+  --red:#EB0A1E; --redink:#FFFFFF; --sea:#0F4C6E; --ok:#1B7F3B;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0E0E0E;--ink:#FFFFFF;--soft:#B5B5B5;--line:#2C2C2C;--card:#1A1A1A;--sea:#7FC3E6;--ok:#5BD17F}
+}
+:root[data-theme="dark"]{--bg:#0E0E0E;--ink:#FFFFFF;--soft:#B5B5B5;--line:#2C2C2C;--card:#1A1A1A;--sea:#7FC3E6;--ok:#5BD17F}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Arial,sans-serif;line-height:1.02;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(34px,7vw,52px);font-weight:800}
+h3{font-size:24px;font-weight:700}
+p{margin:0}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:14px;height:60px}
+.brand{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:22px;text-decoration:none;white-space:nowrap}
+.brand b{color:var(--red)}
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{white-space:nowrap;text-decoration:none;font-weight:600;font-size:15px;padding:8px 14px;border-radius:999px}
+.tabs a:hover{background:var(--card)}
+
+/* hero */
+.hero{padding:28px 0 8px}
+.hero h1{font-size:clamp(64px,17vw,168px);font-weight:800;letter-spacing:-.03em}
+.hero .sub{font-size:clamp(20px,3.4vw,26px);max-width:640px;margin-top:10px;color:var(--soft)}
+.bay{display:block;width:100%;height:auto;margin-top:22px;border-radius:28px;background:var(--card)}
+.clocks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.clock{border:1px solid var(--line);border-radius:20px;padding:14px 16px}
+.clock small{display:block;color:var(--soft);font-size:14px}
+.clock strong{font-family:"Barlow Condensed",sans-serif;font-size:40px;font-weight:700;line-height:1.1}
+.diff{grid-column:1/-1;font-size:15px;color:var(--soft)}
+
+section{padding:56px 0 8px}
+.lead{font-size:19px;max-width:66ch;margin-top:12px;color:var(--soft)}
+.grid{display:grid;gap:14px;margin-top:24px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:var(--card);border-radius:22px;padding:20px}
+.card p{margin-top:8px}
+.card .meta{font-size:14px;color:var(--soft);margin-top:10px}
+.facts{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:22px;overflow:hidden;margin-top:24px}
+.fact{background:var(--bg);padding:18px}
+.fact strong{display:block;font-family:"Barlow Condensed",sans-serif;font-size:32px;font-weight:700;line-height:1.05}
+.fact span{font-size:15px;color:var(--soft)}
+
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:10px 18px;font-weight:600;font-size:15px;text-decoration:none;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;font-family:inherit}
+.pill.red{background:var(--red);border-color:var(--red);color:var(--redink)}
+.pill.sm{padding:6px 14px;font-size:14px;border-width:1.5px}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+
+.place svg{width:100%;height:120px;display:block;border-radius:14px;background:var(--bg);margin-bottom:14px}
+
+/* pros cons */
+.two{display:grid;grid-template-columns:1fr;gap:14px;margin-top:24px}
+@media(min-width:720px){.two{grid-template-columns:1fr 1fr}}
+.list{margin:10px 0 0;padding-left:20px}
+.list li{margin:6px 0}
+
+/* calculator */
+.calc{border:2px solid var(--ink);border-radius:26px;padding:22px;margin-top:24px}
+.fields{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+label{font-weight:600;font-size:15px;display:block}
+select,input[type=number]{width:100%;margin-top:6px;font:inherit;padding:10px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink)}
+.out{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:20px}
+.out div{background:var(--card);border-radius:18px;padding:16px}
+.out small{color:var(--soft);font-size:14px}
+.out strong{display:block;font-family:"Barlow Condensed",sans-serif;font-size:34px;font-weight:700;line-height:1.1}
+.out .cop{font-size:15px;color:var(--soft)}
+.verdict{margin-top:16px;padding:14px 16px;border-radius:16px;border-left:6px solid var(--red);background:var(--card)}
+
+/* routes */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary h3{font-size:26px}
+summary .tag{font-size:13px;font-weight:600;border-radius:999px;padding:4px 10px;white-space:nowrap;background:var(--card)}
+summary .tag.hot{background:var(--red);color:var(--redink)}
+details[open] summary .plus{transform:rotate(45deg)}
+.plus{font-size:30px;line-height:1;transition:transform .2s;color:var(--red)}
+details .body{margin-top:12px;max-width:70ch}
+details .body p+p{margin-top:10px}
+
+/* plan */
+.steps{list-style:none;padding:0;margin:24px 0 0;counter-reset:s}
+.steps li{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
+.steps input{width:26px;height:26px;accent-color:var(--red);flex:none;margin-top:2px}
+.steps .n{font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:800;color:var(--red);width:28px;flex:none;line-height:1.1}
+.steps li.done .t{text-decoration:line-through;color:var(--soft)}
+.progress{height:10px;border-radius:999px;background:var(--card);overflow:hidden;margin-top:18px}
+.progress i{display:block;height:100%;background:var(--red);width:0;transition:width .3s}
+
+.tablewrap{overflow-x:auto;margin-top:20px;border:1px solid var(--line);border-radius:18px}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:16px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{font-weight:700;background:var(--card)}
+tr:last-child td{border-bottom:0}
+
+footer{margin-top:64px;padding:28px 0 40px;border-top:1px solid var(--line);font-size:14px;color:var(--soft)}
+footer p+p{margin-top:8px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.plus,.progress i{transition:none}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Secciones">
+  <div class="wrap">
+    <a class="brand" href="#top">Santander<b>.</b></a>
+    <div class="tabs">
+      <a href="#ciudad">La ciudad</a>
+      <a href="#lugares">Lugares</a>
+      <a href="#barrios">Barrios</a>
+      <a href="#costos">Costos</a>
+      <a href="#emigrar">Cómo emigrar</a>
+      <a href="#familia">Familia</a>
+      <a href="#plan">Plan</a>
+      <a href="#videos">Fotos y videos</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap" id="top">
+  <h1>Santander</h1>
+  <p class="sub">Capital de Cantabria, en el norte de España. Mar, montaña verde y una vida tranquila. Todo lo que la familia necesita saber para pensar un futuro aquí.</p>
+
+  <svg class="bay" viewBox="0 0 1000 380" role="img" aria-label="Ilustración de la bahía de Santander con el Palacio de la Magdalena">
+    <rect width="1000" height="380" fill="var(--card)"/>
+    <circle cx="820" cy="96" r="46" fill="#EB0A1E"/>
+    <path d="M0 250 C120 180 220 210 300 170 C380 130 460 170 520 150 L520 380 L0 380Z" fill="var(--line)"/>
+    <path d="M560 210 C650 150 760 170 860 130 C920 110 970 130 1000 120 L1000 380 L560 380Z" fill="var(--line)" opacity=".7"/>
+    <g fill="var(--ink)">
+      <rect x="360" y="150" width="120" height="44"/>
+      <polygon points="352,152 420,118 488,152"/>
+      <rect x="378" y="122" width="16" height="30"/><polygon points="374,124 386,104 398,124"/>
+      <rect x="446" y="122" width="16" height="30"/><polygon points="442,124 454,104 466,124"/>
+      <rect x="410" y="106" width="20" height="46"/><polygon points="406,108 420,86 434,108"/>
+    </g>
+    <g fill="var(--bg)">
+      <rect x="372" y="164" width="10" height="14"/><rect x="392" y="164" width="10" height="14"/><rect x="438" y="164" width="10" height="14"/><rect x="458" y="164" width="10" height="14"/>
+      <rect x="414" y="170" width="12" height="24"/>
+    </g>
+    <path d="M0 262 Q125 248 250 262 T500 262 T750 262 T1000 262 L1000 380 L0 380Z" fill="var(--sea)"/>
+    <path d="M0 292 Q125 280 250 292 T500 292 T750 292 T1000 292" stroke="var(--card)" stroke-width="3" fill="none" opacity=".6"/>
+    <path d="M0 322 Q125 310 250 322 T500 322 T750 322 T1000 322" stroke="var(--card)" stroke-width="3" fill="none" opacity=".4"/>
+    <g fill="var(--bg)"><polygon points="640,262 700,262 690,274 650,274"/><rect x="666" y="226" width="3" height="36"/><polygon points="669,228 669,258 692,258"/></g>
+  </svg>
+
+  <div class="clocks" aria-live="polite">
+    <div class="clock"><small>Caucasia, Colombia</small><strong id="ckCO">--:--</strong></div>
+    <div class="clock"><small>Santander, España</small><strong id="ckES">--:--</strong></div>
+    <p class="diff" id="ckDiff"></p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="ciudad">
+  <h2>La ciudad</h2>
+  <p class="lead">Una capital pequeña y ordenada frente al mar Cantábrico. Tiene playas urbanas, un hospital de referencia nacional y la sede del Banco Santander, que mueve buena parte de su economía.</p>
+  <div class="facts">
+    <div class="fact"><strong>185.410</strong><span>habitantes</span></div>
+    <div class="fact"><strong>390 km</strong><span>a Madrid por carretera</span></div>
+    <div class="fact"><strong>100 km</strong><span>a Bilbao</span></div>
+    <div class="fact"><strong>9–25 °C</strong><span>clima oceánico, templado y lluvioso</span></div>
+    <div class="fact"><strong>112</strong><span>número de emergencias</span></div>
+    <div class="fact"><strong>1.221 €</strong><span>salario mínimo 2026 (14 pagas)</span></div>
+  </div>
+
+  <div class="two">
+    <div class="card">
+      <h3>A favor</h3>
+      <ul class="list">
+        <li>Bahía y playas dentro de la ciudad.</li>
+        <li>Hospital Universitario Marqués de Valdecilla, referencia en toda España.</li>
+        <li>Universidad de Cantabria y la UIMP para estudiar.</li>
+        <li>Ciudad tranquila, caminable y rodeada de naturaleza.</li>
+        <li>Aeropuerto a pocos minutos y ferri directo al Reino Unido.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>En contra</h3>
+      <ul class="list">
+        <li>Llueve mucho: el verde tiene su precio.</li>
+        <li>Arriendos altos para el tamaño de la ciudad.</li>
+        <li>Menos empleo que Madrid, Barcelona o Bilbao.</li>
+        <li>Todavía sin tren de alta velocidad (AVE).</li>
+        <li>Inviernos grises; nada que ver con el calor del Bajo Cauca.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card"><h3>Economía</h3><p>Banca, administración pública (es capital autonómica), puerto, turismo y servicios. El Parque Científico y Tecnológico de Cantabria (PCTCAN) concentra empresas de tecnología.</p></div>
+    <div class="card"><h3>Salud</h3><p>Valdecilla (público), Mompía y Quirónsalud. Con residencia legal se accede a la tarjeta sanitaria del sistema público.</p></div>
+    <div class="card"><h3>Educación</h3><p>Colegios públicos y concertados gratuitos para los niños empadronados. Universidad de Cantabria para pregrado y posgrado.</p></div>
+  </div>
+</section>
+
+<section id="lugares">
+  <h2>Lugares</h2>
+  <p class="lead">Lo que se visita el primer fin de semana. Cada lugar tiene botones para ver fotos y videos reales.</p>
+  <div class="grid" id="placeGrid"></div>
+</section>
+
+<section id="barrios">
+  <h2>Barrios</h2>
+  <p class="lead">El metro cuadrado promedio en Santander ronda los 2.250 € en 2026. Entre el barrio más barato y el más caro hay cerca de un 65 % de diferencia.</p>
+  <div class="grid">
+    <div class="card"><h3>El Sardinero y Valdenoja</h3><p>Frente a la playa, zona premium y tranquila. Ideal para vivir bien; lo más caro de la ciudad (hasta ~3.040 €/m²).</p><p class="meta">Para: calidad de vida, jubilación, familias con buen presupuesto</p></div>
+    <div class="card"><h3>General Dávila y La Pereda</h3><p>Residencial, en lo alto, con colegios y parques. Muy buscado por familias.</p><p class="meta">Para: familias con niños</p></div>
+    <div class="card"><h3>Centro</h3><p>Paseo de Pereda, Catedral, Mercado de la Esperanza. Todo a pie, más ruido y arriendos altos.</p><p class="meta">Para: parejas, profesionales, vida sin carro</p></div>
+    <div class="card"><h3>Castilla-Hermida</h3><p>Barrio obrero cerca del puerto y la estación. Entre los más económicos (desde ~1.840 €/m²).</p><p class="meta">Para: llegar con presupuesto ajustado</p></div>
+    <div class="card"><h3>Peñacastillo y Nueva Montaña</h3><p>Zona periférica con centros comerciales y buen acceso en bus. Más espacio por menos dinero.</p><p class="meta">Para: familias que priorizan precio</p></div>
+    <div class="card"><h3>Alrededores</h3><p>Maliaño, Muriedas (Camargo), Torrelavega o Santa Cruz de Bezana: más baratos y a 10–30 minutos.</p><p class="meta">Para: comprar vivienda a futuro</p></div>
+  </div>
+</section>
+
+<section id="costos">
+  <h2>¿Cuánto cuesta vivir?</h2>
+  <p class="lead">Estimación mensual para su familia. Es orientativa: los arriendos publicados en agosto de 2026 promediaron 1.098 € y los gastos varían según el estilo de vida.</p>
+
+  <div class="calc">
+    <div class="fields">
+      <label>Adultos
+        <select id="cAd"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></label>
+      <label>Niños
+        <select id="cKid"><option selected>0</option><option>1</option><option>2</option><option>3</option></select></label>
+      <label>Vivienda
+        <select id="cHome">
+          <option value="own">Donde un familiar (sin arriendo)</option>
+          <option value="room">Habitación compartida</option>
+          <option value="out" selected>Apartamento fuera del centro</option>
+          <option value="center">Apartamento en el centro</option>
+          <option value="sard">Apartamento en El Sardinero</option>
+        </select></label>
+      <label>Pesos por euro
+        <input type="number" id="cRate" value="3770" step="10" min="1000" inputmode="numeric"></label>
+    </div>
+    <div class="out">
+      <div><small>Vivienda</small><strong id="oRent">—</strong><span class="cop" id="oRentC"></span></div>
+      <div><small>Comida, transporte, servicios</small><strong id="oLive">—</strong><span class="cop" id="oLiveC"></span></div>
+      <div><small>Total al mes</small><strong id="oTot">—</strong><span class="cop" id="oTotC"></span></div>
+    </div>
+    <p class="verdict" id="oVerdict"></p>
+    <p class="meta" style="margin-top:10px;font-size:14px;color:var(--soft)">Euro de referencia: cierre del 25 de septiembre de 2026. Cámbielo según la tasa del día.</p>
+  </div>
+</section>
+
+<section id="emigrar">
+  <h2>Cómo emigrar</h2>
+  <p class="lead">Los colombianos entran a España sin visa como turistas hasta 90 días, pero el turismo no permite trabajar. Para quedarse hay que escoger bien la vía desde el principio. Información general a septiembre de 2026; valídela con un abogado de extranjería antes de iniciar.</p>
+
+  <details open>
+    <summary><h3>Nómada digital</h3><span class="tag hot">La más viable para usted</span><span class="plus" aria-hidden="true">+</span></summary>
+    <div class="body">
+      <p>Para quien trabaja de forma remota para empresas o clientes fuera de España. Encaja con la venta de software y apps de Vibras Positivas HM a clientes en Colombia.</p>
+      <p><strong>Ingresos mínimos 2026:</strong> 2.849 € al mes para el titular, más 1.069 € por el primer familiar y 357 € por cada familiar adicional.</p>
+      <p><strong>Requisitos clave:</strong> título universitario o 3 años de experiencia, relación con los clientes de al menos 3 meses, empresa con al menos 1 año de actividad. Como independiente, los clientes españoles no pueden pasar del 20 % de sus ingresos.</p>
+      <p><strong>Cómo se prueba:</strong> contratos, facturas y extractos bancarios que muestren ingresos recurrentes. Documentos apostillados y con traducción oficial cuando aplique.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><h3>Contrato de trabajo</h3><span class="tag">Difícil desde Colombia</span><span class="plus" aria-hidden="true">+</span></summary>
+    <div class="body">
+      <p>Una empresa española le ofrece empleo y tramita la autorización. Funciona mejor en oficios con escasez de personal. La contratación desde el país de origen sigue siendo lenta y exigente.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><h3>Estudios</h3><span class="tag">Puerta de entrada</span><span class="plus" aria-hidden="true">+</span></summary>
+    <div class="body">
+      <p>Visa de estudiante para un posgrado o curso oficial, por ejemplo en la Universidad de Cantabria. Permite trabajar a tiempo parcial y, al terminar, abre caminos para cambiar a residencia de trabajo.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><h3>Arraigo</h3><span class="tag">Solo si ya vive en España</span><span class="plus" aria-hidden="true">+</span></summary>
+    <div class="body">
+      <p>Es una residencia por circunstancias excepcionales para quien ya está en España. Desde 2025 hay cinco modalidades: social, sociolaboral, familiar, socioformativo y de segunda oportunidad.</p>
+      <p>La mayoría exige <strong>2 años de permanencia continuada</strong>, sin ausencias de más de 90 días y sin antecedentes penales. Las renovaciones ahora son por 4 años.</p>
+      <p>La regularización extraordinaria de 2026 cerró el 30 de junio de 2026.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><h3>Familiar de ciudadano europeo</h3><span class="tag">Revise su caso</span><span class="plus" aria-hidden="true">+</span></summary>
+    <div class="body">
+      <p>Si algún familiar directo (cónyuge, hijo o padre) tiene nacionalidad española o europea, existe un régimen especial más favorable. Los cuñados no generan este derecho, pero sí pueden ayudar con alojamiento y orientación.</p>
+    </div>
+  </details>
+</section>
+
+<section id="familia">
+  <h2>La familia ya está allá</h2>
+  <p class="lead">Tener cuñadas en España y en Londres cambia mucho el aterrizaje.</p>
+  <div class="grid">
+    <div class="card"><h3>La propiedad en España</h3><p>Llegar a una vivienda de la familia ahorra el gasto más grande del primer año. Si está en Cantabria o cerca, es la base ideal para conocer Santander antes de decidir.</p><p class="meta">Pregunte: ¿en qué ciudad está?, ¿permite empadronarse ahí?</p></div>
+    <div class="card"><h3>El padrón</h3><p>Inscribirse en el padrón municipal del lugar donde vive es el primer trámite en España. Da acceso a salud, colegios y sirve para demostrar el tiempo de residencia.</p></div>
+    <div class="card"><h3>Conexión con Londres</h3><p>Santander tiene ferri directo con Portsmouth y Plymouth (Reino Unido) y vuelos a Londres según temporada. Visitar a la familia en Inglaterra queda cerca.</p><p class="meta">Para entrar al Reino Unido, los colombianos necesitan visa británica aparte.</p></div>
+    <div class="card"><h3>Qué preguntarles</h3><p>Cómo consiguieron trabajo, cuánto pagan de arriendo y servicios, qué abogado les funcionó y qué harían distinto. Esa experiencia vale más que cualquier guía.</p></div>
+  </div>
+</section>
+
+<section id="plan">
+  <h2>Plan paso a paso</h2>
+  <p class="lead">Marque lo que vaya cumpliendo. El avance queda guardado en este celular.</p>
+  <div class="progress" aria-hidden="true"><i id="pBar"></i></div>
+  <p id="pTxt" style="margin-top:8px;color:var(--soft);font-size:15px"></p>
+  <ol class="steps" id="steps"></ol>
+  <div class="row"><button class="pill sm" id="pReset" type="button">Reiniciar plan</button></div>
+</section>
+
+<section id="videos">
+  <h2>Fotos y videos</h2>
+  <p class="lead">Abra cada búsqueda para ver material real y actualizado.</p>
+  <div class="grid" id="vidGrid"></div>
+</section>
+
+<section>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Dato</th><th>Valor 2026</th><th>Fuente</th></tr></thead>
+      <tbody>
+        <tr><td>Salario mínimo España</td><td>1.221 € × 14 pagas</td><td>RD 126/2026</td></tr>
+        <tr><td>Ingreso nómada digital</td><td>2.849 €/mes titular</td><td>200 % del SMI</td></tr>
+        <tr><td>Arriendo promedio Santander</td><td>1.098 €/mes (ago.)</td><td>Enalquiler</td></tr>
+        <tr><td>Precio vivienda</td><td>~2.250 €/m²</td><td>Ren Data</td></tr>
+        <tr><td>Euro en Colombia</td><td>~3.770 pesos (25 sep.)</td><td>Mercado cambiario</td></tr>
+        <tr><td>Reglamento de extranjería</td><td>RD 1155/2024, vigente desde mayo 2025</td><td>BOE</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <p>Hecho por Vibras Positivas HM · Caucasia, Antioquia · WhatsApp 311 770 0431</p>
+  <p>Corte de la información: 27 de septiembre de 2026, hora de Colombia. Es una guía general y no reemplaza la asesoría de un abogado de extranjería.</p>
+</footer>
+
+<script>
+(function(){
+  /* relojes */
+  const fmt = tz => new Intl.DateTimeFormat('es-CO',{timeZone:tz,hour:'2-digit',minute:'2-digit',hour12:true});
+  const fCO = fmt('America/Bogota'), fES = fmt('Europe/Madrid');
+  function offset(tz){
+    const d=new Date();
+    const p=new Intl.DateTimeFormat('en-US',{timeZone:tz,hour12:false,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}).formatToParts(d);
+    const g=t=>+p.find(x=>x.type===t).value;
+    return (Date.UTC(g('year'),g('month')-1,g('day'),g('hour')%24,g('minute'))-d.getTime())/3600000;
+  }
+  function tick(){
+    const d=new Date();
+    document.getElementById('ckCO').textContent=fCO.format(d);
+    document.getElementById('ckES').textContent=fES.format(d);
+    const h=Math.round(offset('Europe/Madrid')-offset('America/Bogota'));
+    document.getElementById('ckDiff').textContent='En Santander van '+h+' horas adelante. Cuando allá son las 9 de la mañana, en Caucasia son las '+(((9-h)%24+24)%24)+' de la madrugada.';
+  }
+  tick(); setInterval(tick,30000);
+
+  /* lugares */
+  const places=[
+    ['Palacio de la Magdalena','Residencia de verano de la familia real a comienzos del siglo XX, en una península con parque, playas y focas.','En la ciudad','Palacio de la Magdalena Santander','palace'],
+    ['Playa de El Sardinero','La playa urbana más famosa: arena amplia, paseo marítimo y el Gran Casino.','En la ciudad','Playa El Sardinero Santander','beach'],
+    ['Centro Botín','Centro de arte frente a la bahía, con miradores voladizos y jardines de Pereda.','En la ciudad','Centro Botín Santander','art'],
+    ['Faro de Cabo Mayor','Acantilados y atardeceres sobre el Cantábrico, a pocos minutos del centro.','En la ciudad','Faro Cabo Mayor Santander','light'],
+    ['Parque de Cabárceno','Animales en semilibertad dentro de una antigua mina, con teleférico.','17 km','Parque de la Naturaleza Cabárceno','park'],
+    ['Santillana del Mar','Pueblo medieval de piedra y la neocueva de Altamira con arte rupestre.','30 km','Santillana del Mar Cantabria','village'],
+    ['Comillas','Villa señorial con el Capricho de Gaudí y playa.','50 km','Comillas Cantabria Capricho Gaudí','village'],
+    ['Picos de Europa','Montañas, lagos y el teleférico de Fuente Dé. Paisaje de postal.','~120 km','Picos de Europa Fuente Dé Cantabria','mount']
+  ];
+  const art={
+    palace:'<rect x="60" y="50" width="80" height="34" fill="var(--ink)"/><polygon points="54,52 100,26 146,52" fill="var(--ink)"/><rect x="92" y="30" width="16" height="22" fill="var(--ink)"/><path d="M0 92 Q50 84 100 92 T200 92 V120 H0Z" fill="var(--sea)"/>',
+    beach:'<circle cx="160" cy="36" r="16" fill="#EB0A1E"/><path d="M0 70 Q50 62 100 70 T200 70 V90 H0Z" fill="var(--sea)"/><path d="M0 90 H200 V120 H0Z" fill="#E9D8A6"/><path d="M50 90 L50 60" stroke="var(--ink)" stroke-width="3"/><path d="M30 64 Q50 46 70 64Z" fill="#EB0A1E"/>',
+    art:'<rect x="40" y="36" width="70" height="40" rx="4" fill="var(--ink)"/><rect x="96" y="46" width="70" height="36" rx="4" fill="#EB0A1E"/><path d="M0 96 Q50 88 100 96 T200 96 V120 H0Z" fill="var(--sea)"/>',
+    light:'<path d="M0 120 L0 70 L70 60 L110 120Z" fill="var(--ink)"/><rect x="40" y="26" width="14" height="36" fill="var(--bg)" stroke="var(--ink)" stroke-width="3"/><rect x="38" y="20" width="18" height="8" fill="#EB0A1E"/><path d="M56 24 L190 8 L190 40Z" fill="#EB0A1E" opacity=".25"/><path d="M110 104 Q150 96 200 104 V120 H110Z" fill="var(--sea)"/>',
+    park:'<path d="M0 120 L40 60 L80 90 L120 40 L170 100 L200 80 V120Z" fill="var(--line)"/><ellipse cx="110" cy="96" rx="26" ry="14" fill="var(--ink)"/><rect x="92" y="104" width="6" height="12" fill="var(--ink)"/><rect x="122" y="104" width="6" height="12" fill="var(--ink)"/><path d="M136 90 Q150 70 146 60" stroke="var(--ink)" stroke-width="6" fill="none"/>',
+    village:'<rect x="30" y="60" width="44" height="50" fill="var(--ink)"/><polygon points="26,62 52,40 78,62" fill="#EB0A1E"/><rect x="84" y="50" width="50" height="60" fill="var(--ink)"/><polygon points="80,52 109,28 138,52" fill="#EB0A1E"/><rect x="146" y="66" width="34" height="44" fill="var(--ink)"/><rect x="100" y="84" width="16" height="26" fill="var(--bg)"/>',
+    mount:'<path d="M0 120 L60 30 L90 70 L130 20 L200 120Z" fill="var(--ink)"/><path d="M60 30 L72 48 L50 46Z M130 20 L146 44 L116 42Z" fill="var(--bg)"/><path d="M40 110 Q100 100 160 110" stroke="var(--sea)" stroke-width="6" fill="none"/>'
+  };
+  const q=s=>encodeURIComponent(s);
+  document.getElementById('placeGrid').innerHTML=places.map(p=>`
+    <div class="card place">
+      <svg viewBox="0 0 200 120" aria-hidden="true">${art[p[4]]}</svg>
+      <h3>${p[0]}</h3><p>${p[1]}</p><p class="meta">Distancia: ${p[2]}</p>
+      <div class="row">
+        <a class="pill sm" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=${q(p[3])}">Ver fotos</a>
+        <a class="pill sm red" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=${q(p[3])}">Ver videos</a>
+      </div>
+    </div>`).join('');
+
+  /* videos */
+  const vids=[
+    ['Santander desde el aire','Santander Cantabria 4K dron'],
+    ['Colombianos viviendo en Santander','colombianos viviendo en Santander España'],
+    ['Pros y contras de vivir en Santander','vivir en Santander España pros y contras'],
+    ['Visa de nómada digital 2026','visa nómada digital España 2026 requisitos'],
+    ['Cómo es el clima en Cantabria','clima Santander Cantabria invierno lluvia'],
+    ['Buscar piso en Santander','alquilar piso Santander Cantabria precios']
+  ];
+  document.getElementById('vidGrid').innerHTML=vids.map(v=>`
+    <div class="card"><h3>${v[0]}</h3>
+      <div class="row"><a class="pill sm red" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=${q(v[1])}">Abrir en YouTube</a></div>
+    </div>`).join('')+`
+    <div class="card"><h3>Mapa de la ciudad</h3>
+      <div class="row"><a class="pill sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/${q('Santander, Cantabria, España')}">Abrir en Google Maps</a></div>
+    </div>`;
+
+  /* calculadora (valores orientativos en euros) */
+  const RENT={own:0,room:400,out:700,center:950,sard:1200};
+  const $=id=>document.getElementById(id);
+  const eur=n=>n.toLocaleString('es-ES',{maximumFractionDigits:0})+' €';
+  const cop=n=>'$'+Math.round(n).toLocaleString('es-CO')+' pesos';
+  function calc(){
+    const a=+$('cAd').value,k=+$('cKid').value,h=$('cHome').value,r=+$('cRate').value||0;
+    let rent=RENT[h];
+    if((h==='out'||h==='center'||h==='sard') && (a+k)>=3) rent=Math.round(rent*1.35);
+    const live=750+ (a-1)*520 + k*380 + (h==='own'?0:150);
+    const tot=rent+live;
+    $('oRent').textContent=eur(rent); $('oRentC').textContent=cop(rent*r);
+    $('oLive').textContent=eur(live); $('oLiveC').textContent=cop(live*r);
+    $('oTot').textContent=eur(tot);   $('oTotC').textContent=cop(tot*r);
+    const fam=(a+k)-1;
+    const need=2849+(fam>0?1069:0)+Math.max(0,fam-1)*357;
+    $('oVerdict').textContent='Para la visa de nómada digital con '+(a+k)+(a+k===1?' persona':' personas')+' se exige demostrar al menos '+eur(need)+' al mes ('+cop(need*r)+'). '+(need>=tot?'Ese ingreso cubriría el costo estimado.':'Ojo: el costo estimado supera el mínimo exigido.');
+  }
+  ['cAd','cKid','cHome','cRate'].forEach(id=>$(id).addEventListener('input',calc));
+  calc();
+
+  /* plan */
+  const steps=[
+    'Hablar con las cuñadas: ciudad de la propiedad, costos reales y contactos.',
+    'Sacar o renovar pasaportes de toda la familia.',
+    'Definir la vía: nómada digital, estudios o contrato.',
+    'Consulta con un abogado de extranjería (hay asesorías por videollamada).',
+    'Ordenar ingresos: contratos y facturas de clientes, extractos de 3 a 12 meses.',
+    'Apostillar títulos, antecedentes y registros civiles.',
+    'Viaje de reconocimiento a Santander (hasta 90 días como turista).',
+    'Presentar la solicitud de visa o residencia.',
+    'Al llegar: empadronarse y sacar el NIE / TIE.',
+    'Tarjeta sanitaria, cuenta bancaria y colegio para los niños.'
+  ];
+  const KEY='santander-plan-v1';
+  let done=[];
+  try{done=JSON.parse(localStorage.getItem(KEY)||'[]')||[]}catch(e){done=[]}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}}
+  function render(){
+    $('steps').innerHTML=steps.map((s,i)=>`
+      <li class="${done.includes(i)?'done':''}">
+        <span class="n">${i+1}</span>
+        <input type="checkbox" id="st${i}" ${done.includes(i)?'checked':''} aria-label="Paso ${i+1}">
+        <label for="st${i}" class="t" style="font-weight:500;font-size:17px">${s}</label>
+      </li>`).join('');
+    steps.forEach((_,i)=>$('st'+i).addEventListener('change',e=>{
+      done=e.target.checked?[...new Set([...done,i])]:done.filter(x=>x!==i);save();render();
+    }));
+    $('pBar').style.width=(done.length/steps.length*100)+'%';
+    $('pTxt').textContent=done.length+' de '+steps.length+' pasos cumplidos';
+  }
+  $('pReset').addEventListener('click',()=>{done=[];save();render()});
+  render();
+})();
+</script>
+<script>
+if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
+</script>
+</body>
+</html>
